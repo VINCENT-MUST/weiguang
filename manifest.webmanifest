@@ -1,0 +1,25 @@
+{
+  "name": "微光 · 胶片曝光补偿",
+  "short_name": "微光",
+  "description": "胶片倒易律曝光补偿工具",
+  "lang": "zh-CN",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#171c1b",
+  "theme_color": "#171c1b",
+  "icons": [
+    {
+      "src": "./icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "./icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

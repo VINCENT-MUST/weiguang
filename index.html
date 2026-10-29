@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="theme-color" content="#171c1b"><meta name="color-scheme" content="dark light">
+<link rel="manifest" href="./manifest.webmanifest"><link rel="icon" href="./icon-192.png" sizes="192x192" type="image/png">
 <meta name="description" content="29款胶片倒易律曝光补偿，离线本地计算，附官方资料依据。">
 <title>微光 · 胶片曝光补偿</title>
 <style>:root{--bg:#171c1b;--panel:#202725;--raised:#29312e;--ink:#f0eee5;--muted:#a4ada5;--line:#39423b;--accent:#c3dab2;--accent-text:#d6e8c8;--accent-dark:#243323;--warn:#e8c28d;--result:#29392d;--shadow:0 16px 55px #0002;--art:#303d34;color-scheme:dark;font-family:Inter,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif}
@@ -241,5 +242,6 @@ setTheme(store.read('theme','dark')==='light'?'light':'dark');
 $('theme').addEventListener('click',()=>setTheme(document.documentElement.dataset.theme==='dark'?'light':'dark'));
 render();
 </script>
+<script>if (location.protocol === 'https:' && 'serviceWorker' in navigator) navigator.serviceWorker.register('./sw.js').catch(() => {});</script>
 </body>
 </html>
