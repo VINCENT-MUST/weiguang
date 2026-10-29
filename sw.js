@@ -1,4 +1,4 @@
-const CACHE = "weiguang-6a70fa6502d6";
+const CACHE = "weiguang-4e3b4e905a3a";
 const FILES = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(FILES)).then(() => self.skipWaiting()));
